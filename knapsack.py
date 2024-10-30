@@ -42,7 +42,7 @@ print(sampleset)
 
 feasible_sampleset = sampleset.filter(lambda row: row.is_feasible)
 print("\nFeasible sample set:")
-print(feasible_sampleset)
+print(feasible_sampleset.aggregate())
 
 best_sample = feasible_sampleset.first.sample
 value_string = "Values:\t\t"
